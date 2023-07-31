@@ -1,1 +1,126 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://opg.me/ns#">
+<head>
+  <title>Sean Richardson</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/stylesheets/style.css">
+  <meta name="title" property="og:title" content="Sean Richardson" />
+  <meta name="description" property="og:description" content="I’m a full stack software engineer who is passionate about fighting climate change and recently built Waypost." />
+  <meta name="type" property="og:type" content="website" />
+  <meta name="url" property="og:url" content="https://seanrichardson.dev" />
+  <meta name="image" property="og:image" content="public/assets/images/android-icon-192x192.png" />
+  <meta name="author" content="Sean Richardson" />
+  <!-- ICONS -->
+  <link rel="shortcut icon" type="image/x-icon" href="public/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="public/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="public/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="public/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="public/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="public/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="public/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="public/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="public/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="public/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="public/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="public/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <div class="logo-links">
+    <a href="https://github.com/seanrichardson95" target="_blank">
+      <img class="icon" src="public/assets/icons/git_hub.svg" alt="github logo" id="github-logo">
+    </a>
+    <a href="public/assets/Sean_Richardson_Resume.pdf" target="_blank">
+      <img class="icon" src="public/assets/icons/resume.svg" alt="link to Sean Richardson resume" id="resume-logo">
+    </a>
+    <a href="https://www.linkedin.com/in/sean-richardson-093212ba/" target="_blank">
+      <img class="icon" src="public/assets/icons/linked_in.svg" alt="link to Sean Richardson LinkedIn" id="linkedin-logo">
+    </a>
+  </div>
+  <main>
+    <section id="intro" class="flexbox horz-center">
+      <img id="avatar" src="public/assets/images/SRSquare.png" alt="photo of Sean Richardson">
+      <h3 id="name">Sean Richardson</h3>
+      <p>I’m a full stack software engineer who loves working with a team and is passionate about fighting climate change.</p>
+      <p>
+        I am proficient with JavaScript, React, and Ruby and am comfortable with Python, Docker, Go, and AWS.
+        I recently built <a class="waypost" href="https://waypost-io.github.io/">Waypost</a>, an open-source feature flag management platform that specializes in A/B testing.
+      </p>
+    </section>
+    <section id="waypost" class="flexbox horz-center">
+      <div id="waypost-title-container" class="flexbox">
+        <a href="https://waypost-io.github.io/"><img id="waypost-logo" src="public/assets/images/waypost_logo_cropped.png" alt="waypost logo" /></a>
+      </div>
+      <div id="waypost-info-container" class="flexbox">
+        <div>
+          <figure>
+            <img id="waypost-architecture" src="public/assets/images/waypost_architecture.png" alt="Waypost's Architecture" />
+            <figcaption>Full Architecture</figcaption>
+          </figure>
+        </div>
+        <div class="flexbox horz-center">
+          <p class="waypost-text"><a class="waypost" href="https://waypost-io.github.io/">Waypost</a> is an open-source, lightweight, self-hosted feature flag management platform that specializes in A/B Testing.</p>
+          <p class="waypost-text">Waypost provides feature flag management infrastructure that integrates with an organization’s application and existing user event logging system. Waypost allows developers to control functionality remotely without deploying code and to run A/B tests to determine how a new feature impacts user behavior and business goals.</p>
+        </div>
+      </div>
+      <div id="waypost-video-container" class="flexbox">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sEuvyCopWZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flexbox horz-center">
+          <p class="waypost-text">To learn about the engineering problems Waypost addresses, how it works, and the key engineering decisions and tradeoffs made while designing and building Waypost, watch our presentation or click the button below!</p>
+          <a id="waypost-repo-btn" class="btn" target="_blank" href="https://waypost-io.github.io/">READ THE CASE STUDY</a>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="flexbox horz-center">
+        <h2>Other projects</h2>
+        <ul class="flexbox vert-center">
+          <li>
+            <img src="public/assets/images/Trello-clone.png" alt="Screenshot of Wello application" />
+            <h4>Wello</h4>
+            <p>A Kanban style Trello board clone built with MongoDB, Express, React/Redux and Axios.</p>
+          </li>
+          <li>
+            <img src="public/assets/images/hooktester_home.jpg" alt="Screenshot of HookTester application" />
+            <h4>HookTester</h4>
+            <p>A RequestBin clone that allows one to test and debug webhooks. Built with MongoDB, Express, and React.</p>
+          </li>
+          <li>
+            <img src="public/assets/images/airlineApp.png" alt="Screenshot of airline routes viewer application" />
+            <h4>Airline Routes</h4>
+            <p>An application that allows users to view and filter airline routes on a clickable svg map. Bootstrapped with Create React App.</p>
+          </li>
+        </ul>
+      </section>
+    <section id="contact" class="flexbox horz-center">
+      <h3>Let's Connect!</h3>
+      <h4>I am looking for my next opportunity! Please get in touch if you think I'd be a good fit for your team.</h4>
+      <a id="email" href="mailto:sean.richardson.umd18@gmail.com">sean.richardson.umd18@gmail.com</a>
+      <ul class="flexbox vert-center">
+        <li>
+          <a href="public/assets/Sean_Richardson_Resume.pdf" target="_blank">
+            <img class="icon" src="public/assets/icons/resume.svg" alt="link to Sean Richardson resume">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/seanrichardson95" target="_blank">
+            <img class="icon" src="public/assets/icons/git_hub.svg" alt="link to Sean Richardson GitHub">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/sean-richardson-093212ba/" target="_blank">
+            <img class="icon" src="public/assets/icons/linked_in.svg" alt="link to Sean Richardson LinkedIn">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

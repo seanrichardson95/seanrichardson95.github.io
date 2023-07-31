@@ -1,0 +1,589 @@
+@import url('whitespace-reset.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* ---------------------------------
+
+                general
+
+------------------------------------ */
+body {
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+  background-color: #dde5ef;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  color: #33c5ff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
+  color: #0c1b2c;
+}
+
+h3, #resume-btn {
+  color: #0c1b2c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+#resume-btn:hover {
+  color: #ffa466;
+}
+
+header {
+  padding: 15px;
+  position: fixed;
+}
+
+#about-me {
+  display: none;
+}
+
+#about-me-toggle {
+  width: 40px;
+  height: 40px;
+}
+
+#intro > h4 > img {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+#contact h3 {
+  color: #000000;
+}
+
+
+#projects > ul {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  margin-top: 75px;
+}
+
+#projects img {
+  box-shadow: 0 0 25px #d2d7d3;
+  width: 100%;
+}
+
+h4 {
+  align-items: center;
+  color: #0c1b2c;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 35px;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h5 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  margin-bottom: 15px;
+}
+
+a.waypost {
+ color: #bb4c9b;
+}
+
+a.waypost:hover {
+  color: #04c2c3;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 10%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ecf0f1;
+  width: 15%;
+}
+
+footer {
+  background-color: #262626;
+  padding: 25px 0;
+}
+
+figcaption {
+  font-size: 0.8em;
+  color: rgb(55, 65, 81);
+  display: block;
+  text-align: center;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.btn {
+  background-color: #bb4c9b;
+  border: solid 1px #bb4c9b;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+
+.icon {
+  background-color: #0c1b2c;
+  border: solid 1px #0c1b2c;
+  border-radius: 25px;
+  margin: 2%;
+  min-width: 34px;
+  padding: 3px;
+  width: 100%;
+}
+
+.btn:hover,
+.icon:hover {
+  background-color: #04c2c3;
+  border-color: #04c2c3;
+}
+
+.horz-center {
+  -ms-align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vert-center {
+  -ms-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.waypost-text {
+  margin-bottom: 0;
+}
+
+#logo {
+  margin: 25px;
+  opacity: 0.5;
+  position: fixed;
+  width: 60px;
+}
+
+/* ---------------------------------
+
+               intro
+
+------------------------------------ */
+
+#avatar {
+  display: block;
+  max-width: 250px;
+  min-width: 200px;
+  object-fit: contain;
+  width: 25%;
+}
+
+#intro > p {
+  text-align: center;
+  width: 550px;
+}
+
+/* ---------------------------------
+
+               #waypost
+
+------------------------------------ */
+
+#waypost {
+  background-color: #F5F8FC;
+}
+
+#waypost-title-container,
+#waypost-video-container {
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#waypost-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+#waypost h2 {
+  display: inline-block;
+}
+
+#waypost-info-container,
+#waypost-video-container {
+  margin-top: 50px;
+}
+
+#waypost-info-container > div,
+#waypost-video-container > div {
+  width: 50%;
+}
+
+#waypost-info-container > div:first-of-type,
+#waypost-video-container > div:first-of-type {
+  margin-right: 2.5%;
+}
+
+#waypost-architecture {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+div > iframe {
+  max-width: 100%;
+}
+
+#waypost-info-container > div:last-of-type,
+#waypost-video-container > div:last-of-type {
+  margin-left: 2.5%;
+}
+
+#waypost p:first-of-type {
+  position: relative;
+  top: -0.5rem;
+}
+
+#waypost-repo-btn {
+  margin: 20px;
+  box-shadow: 2px 2px 2px #0c1b2c
+}
+
+/* ---------------------------------
+
+              projects
+
+------------------------------------ */
+
+#projects li {
+  margin: 0 2%;
+  padding: 2% 2%;
+  border: 1px solid;
+  border-color: #0c1b2c;
+  border-radius: 5px;
+  width: 25%;
+  box-shadow: 1px 2px 1px #0c1b2c;
+}
+
+
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#resume-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+#github-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 55px;
+  left: 5px;
+}
+
+#linkedin-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 105px;
+  left: 5px;
+}
+
+#contact {
+  padding-top: 50px;
+  background-color: #F5F8FC
+}
+
+#contact h3 {
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  font-size: 16px;
+}
+
+#contact ul {
+  width: 20%;
+}
+
+#contact li {
+  margin: 6%;
+}
+
+#email {
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------
+
+           media queries
+
+------------------------------------ */
+
+@media(max-width: 1100px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  #logo {
+    margin: 20px;
+    width: 55px;
+  }
+
+  #projects p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+}
+
+
+@media(max-width: 920px) {
+  section {
+    padding: 75px 15%;
+  }
+
+  li {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  #projects p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  #projects img {
+    max-height: 137px;
+  }
+
+  #projects > ul {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #logo {
+    width: 50px;
+  }
+
+  #waypost-info-container,
+  #waypost-video-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #waypost-info-container > div:first-of-type,
+  #waypost-video-container > div:first-of-type {
+    margin-right: 0;
+  }
+
+  #waypost-info-container > div:last-of-type,
+  #waypost-video-container > div:last-of-type {
+    margin-left: 0;
+  }
+
+  #waypost-info-container > div,
+  #waypost-video-container > div {
+    width: 90%;
+  }
+
+  #deploy-command-gif,
+  div > iframe {
+    margin-bottom: 50px;
+  }
+
+  #contact ul {
+    width: 30%;
+  }
+
+  #contact li {
+    margin: 8%;
+  }
+}
+
+
+@media(max-width: 690px) {
+  #waypost-logo {
+    margin-bottom: 25px;
+    width: 75px;
+  }
+
+  #waypost-title-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #waypost-logo {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 570px) {
+  #intro > p {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+    width: 80vw;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    color: #0c1b2c;
+  }
+
+  section {
+    padding: 65px 15%;
+  }
+
+  #waypost-info-container {
+    margin-top: 25px;
+  }
+
+  #waypost-repo-btn {
+    align-self: center;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
+}
+
+@media(max-width: 465px) {
+  #waypost-info-container > div {
+    width: 100%;
+  }
+
+  #waypost-logo {
+    width: 60px;
+  }
+
+  #contact li {
+    margin: 15%;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
+}
+
+
+@media(max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  #waypost-repo-btn {
+    width: 180px;
+  }
+
+  #projects > ul {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    margin-bottom: 50px;
+  }
+
+  #projects li:last-of-type {
+    margin-bottom: 0;
+  }
+}
